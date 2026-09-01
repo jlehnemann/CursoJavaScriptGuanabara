@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título do Site</title>
+    <style>
+        body {
+            /* comentário em CSS */
+            background-color: rgb(255, 235, 205);
+            color: rgb(166, 43, 43);
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(35, 45, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Exemplo de parágrafo</p> <!-- Comentário HTML -->
+    <script>
+        var n1 = window.prompt('Digite um número: ')
+        var n2 = window.prompt('Digite outro número: ')
+
+        var soma = Number.parseFloat(n1) + Number.parseFloat(n2)
+        //pode usar Number só, ele faz implicitamente - riscos
+
+        window.alert('A soma dos valores é ' + soma)
+        //tbm poderia ser:
+        window.alert(`A soma dos valores é ${soma}`)
+        
+    </script>
+</body>
+</html>
