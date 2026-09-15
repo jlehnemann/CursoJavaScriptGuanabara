@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var body = window.document.body
+        var p1 = window.document.getElementsByTagName('p') [1] //0 = primeiro parágrafo, 1 = segundo parágrafo
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+        body.style.background = 'black'
+        window.document.write(window.document.URL)
+        document.writeln(p1.innerText) //resgata só o texto
+        document.writeln(p1.innerHTML) //resgata com marcações HTML
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        var e = window.document.querySelector('div#msg') //# = id ; . = name
+        e.style.color = 'blue'
+    </script>
+</html>
