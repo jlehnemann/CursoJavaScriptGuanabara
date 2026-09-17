@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de confirmação de nacionalidade brasileira</title>
+</head>
+<body>
+    Digite o seu país de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Processar" onclick="processar()">
+    <div id = 'res'>
+
+    </div>
+    <script>
+        
+        function processar() {
+         
+            var txt = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+
+            var país = txt.value.trim();
+            
+
+            if (país.toLowerCase() !== 'brasil') {
+                res.innerHTML = '<p>Você é Estrangeiro!</p>'
+            } 
+            else {
+                res.innerHTML = '<p>Você é Brasileiro!</p>'
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
