@@ -1,0 +1,6 @@
+for (let c=1; c<=5; c++) {
+    console.log(c);
+}
+console.log('FIM!')
+
+//ver com debug para entender cada passo
